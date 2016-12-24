@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette|Dosis|Yanone+Kaffeesatz");
+/* line 13, /Users/admin/Dropbox/personal-website/scss/style.scss */
+.navbar {
+  background: none;
+}
+
+/* line 17, /Users/admin/Dropbox/personal-website/scss/style.scss */
+.jumbotron {
+  margin-top: -5rem;
+  margin-bottom: 0rem;
+  background-size: cover;
+  background-image: url("../img/Skyline-2.jpg");
+  height: 50rem;
+  color: white;
+}
+
+/* line 24, /Users/admin/Dropbox/personal-website/scss/style.scss */
+.jumbotron h1 {
+  font-size: 4.236em;
+  margin-bottom: 1rem;
+}
+
+/* line 28, /Users/admin/Dropbox/personal-website/scss/style.scss */
+.jumbotron p {
+  font-family: "Dosis", sans-serif;
+  font-size: 1em;
+}
+
+/* line 34, /Users/admin/Dropbox/personal-website/scss/style.scss */
+#logo-name {
+  font-family: "Courgette", cursive !important;
+}
+
+/* line 38, /Users/admin/Dropbox/personal-website/scss/style.scss */
+#nav-bar {
+  font-family: "Dosis", sans-serif !important;
+  font-size: 1rem;
+}
+
+/* line 43, /Users/admin/Dropbox/personal-website/scss/style.scss */
+h1,
+h2 {
+  font-family: "Courgette", cursive;
+}
+
+/* line 48, /Users/admin/Dropbox/personal-website/scss/style.scss */
+h2 {
+  font-size: 2.618em;
+  margin-bottom: 1.618em;
+}
+
+/* line 53, /Users/admin/Dropbox/personal-website/scss/style.scss */
+section {
+  padding: 4.236em;
+}
+
+/* line 55, /Users/admin/Dropbox/personal-website/scss/style.scss */
+section img {
+  margin: 1.618em;
+}
+
+/* line 60, /Users/admin/Dropbox/personal-website/scss/style.scss */
+#about-section {
+  color: white;
+  background-color: #081824;
+}
+
+/* line 63, /Users/admin/Dropbox/personal-website/scss/style.scss */
+#about-section p {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.618em;
+  line-height: 1.8em;
+  margin-bottom: 1rem;
+}
+
+/* line 71, /Users/admin/Dropbox/personal-website/scss/style.scss */
+#work-section {
+  background-color: #F1EBD3;
+}
+
+/* line 75, /Users/admin/Dropbox/personal-website/scss/style.scss */
+#photography-section {
+  background-color: #081824;
+  color: white;
+}
+
+/*# sourceMappingURL=../css/style.map */

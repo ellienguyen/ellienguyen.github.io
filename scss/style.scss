@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Dosis|Yanone+Kaffeesatz');
+$name-font: 'Courgette',
+cursive;
+$note-font: 'Yanone Kaffeesatz',
+sans-serif;
+$normal-font: 'Dosis',
+sans-serif;
+$deep-blue: #081824;
+$second-blue: #45848E;
+$regular-blue: #72A4A1;
+$second-yellow: #D5DDD0;
+$regular-yellow: #F1EBD3;
+.navbar {
+    background: none;
+}
+
+.jumbotron {
+    margin-top: -5rem;
+    margin-bottom: 0rem;
+    background-size: cover;
+    background-image: url("../img/Skyline-2.jpg");
+    height: 50rem;
+    color: white;
+    h1 {
+        font-size: 4.236em;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-family: $normal-font;
+        font-size: 1em;
+    }
+}
+
+#logo-name {
+    font-family: $name-font !important;
+}
+
+#nav-bar {
+    font-family: $normal-font !important;
+    font-size: 1rem;
+}
+
+h1,
+h2 {
+    font-family: $name-font;
+}
+
+h2 {
+    font-size: 2.618em;
+    margin-bottom: 1.618em;
+}
+
+section {
+	padding: 4.236em;
+	img {
+    	margin: 1.618em;
+    }
+}
+
+#about-section {
+    color: white;
+    background-color: $deep-blue;
+    p {
+        font-family: $normal-font;
+        font-size: 1.618em;
+        line-height: 1.8em;
+        margin-bottom: 1rem;
+    }
+}
+
+#work-section {
+    background-color: $regular-yellow;
+}
+
+#photography-section {
+	background-color: $deep-blue;
+	color: white;
+}

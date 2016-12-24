@@ -5,62 +5,136 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-    <title></title>
-    <meta name="description" content="">
+    <title>Ellie Nguyen's Personal Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <!--<link rel="stylesheet" href="css/main.css"> -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="dist/zmd.hierarchical-display.min.css">
+    <!-- You need to include jquery.zmd.hierarchical-display.js after jQuery. Requires jQuery 1.7+. -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="dist/jquery.zmd.hierarchical-display.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-static-top navbar-dark bg-inverse">
-        <a class="navbar-brand" href="#">Project name</a>
-        <ul class="nav navbar-nav">
+    <nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="#">
+            <p id="logo-name">Ellie Nguyen</p>
+        </a>
+        <ul class="nav navbar-nav" id="nav-bar">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about-section">About Me</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#work-section">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#photography-section">Photography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://drive.google.com/file/d/0Byc_wakxENOtRFJwZ002MXRVc0E/view?usp=sharing" target='_blank'>Resume</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav float-xs-right" id="icon-bar">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/thuydung.nguyendo" target='_blank'>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/ellienguyen" target='_blank'>
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/dzungnguyendo" target='_blank'>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.flickr.com/gp/135261299@N05/G4s185" target='_blank'>
+                    <i class="fa fa-flickr" aria-hidden="true"></i>
+                </a>
             </li>
         </ul>
     </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="jumbotron" s=data-animation="hierarchical-display" data-animation-in="bounceIn" data-speed="3">
         <div class="container">
-            <h1 class="display-3">Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+            <div class="col-md-6 offset-md-6 col-xs-12">
+                <h1 class="float-xs-right">Ellie Nguyen</h1>
+                <p class="float-xs-right">Front-end Dev   |   UX Designer   |   Photographer</p>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+    <section id="about-section">
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-xs-center">About me</h2>
+                </div>
+                <div class="col-xs-6">
+                    <p>I'm Ellie Nguyen (Dung Nguyen Do T.), a freshman at Vanderbilt University, majoring in Computer Science. </p>
+                    <p>I am passionate about design and developing dynamic websites which are both visually pleasing and easy to use. </p>
+                    <p>I am also an aspiring photographer, specialized in portrait, event and landscape photography</p>
+                </div>
+                <div class="col-xs-5 offset-md-1">
+                    <img src="img/Personal.jpg" class="img-fluid img-thumbnail">
+                </div>
             </div>
         </div>
-        <hr>
-        <footer>
-            <p>&copy; Company 2016</p>
-        </footer>
+    </section>
+    <section id="work-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-xs-center">Work</h2>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <img src="http://placehold.it/600x600" class="img-fluid">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <img src="http://placehold.it/600x600" class="img-fluid">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <img src="http://placehold.it/600x600" class="img-fluid">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <img src="http://placehold.it/600x600" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="photography-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-xs-center">Photography</h2>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <img src="img/portrait.jpg" class="img-fluid">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <img src="img/firework.jpg" class="img-fluid">
+                </div>
+                <div class="col-xs-12">
+                    <img src="img/tea.jpg" class="img-fluid">
+                </div>
+                <div class="col-xs-12">
+                    <img src="img/skyline.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
     </div>
     <!-- /container -->
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
