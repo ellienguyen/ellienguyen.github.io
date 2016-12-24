@@ -10,12 +10,11 @@ $second-blue: #45848E;
 $regular-blue: #72A4A1;
 $second-yellow: #D5DDD0;
 $regular-yellow: #F1EBD3;
-.navbar {
-    background: none;
+body {
+    position: relative;
 }
 
 .jumbotron {
-    margin-top: -5rem;
     margin-bottom: 0rem;
     background-size: cover;
     background-image: url("../img/Skyline-2.jpg");
@@ -29,15 +28,27 @@ $regular-yellow: #F1EBD3;
         font-family: $normal-font;
         font-size: 1em;
     }
+    a {
+    	color: white;
+    }
+
+    a:hover {
+    	color: #E5E5E5;
+    }
 }
 
 #logo-name {
     font-family: $name-font !important;
 }
 
+.navbar {
+    height: 4.236em;
+    padding-top: 1rem;
+}
+
 #nav-bar {
     font-family: $normal-font !important;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 h1,
@@ -51,9 +62,9 @@ h2 {
 }
 
 section {
-	padding: 4.236em;
-	img {
-    	margin: 1.618em;
+    padding: 4.236em;
+    img {
+        margin: 1em;
     }
 }
 
@@ -73,6 +84,19 @@ section {
 }
 
 #photography-section {
-	background-color: $deep-blue;
-	color: white;
+    background-color: $deep-blue;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .jumbotron {
+        background-image: url("../img/Skyline-portrait.jpg");
+    }
+
+    #about-section {
+    	p {
+    		font-size: 1em;
+        	line-height: 1.5em;	
+    	}
+    }
 }

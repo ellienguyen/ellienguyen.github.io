@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Courgette|Dosis|Yanone+Kaffeesatz");
 /* line 13, /Users/admin/Dropbox/personal-website/scss/style.scss */
-.navbar {
-  background: none;
+body {
+  position: relative;
 }
 
 /* line 17, /Users/admin/Dropbox/personal-website/scss/style.scss */
 .jumbotron {
-  margin-top: -5rem;
   margin-bottom: 0rem;
   background-size: cover;
   background-image: url("../img/Skyline-2.jpg");
@@ -14,58 +13,74 @@
   color: white;
 }
 
-/* line 24, /Users/admin/Dropbox/personal-website/scss/style.scss */
+/* line 23, /Users/admin/Dropbox/personal-website/scss/style.scss */
 .jumbotron h1 {
   font-size: 4.236em;
   margin-bottom: 1rem;
 }
 
-/* line 28, /Users/admin/Dropbox/personal-website/scss/style.scss */
+/* line 27, /Users/admin/Dropbox/personal-website/scss/style.scss */
 .jumbotron p {
   font-family: "Dosis", sans-serif;
   font-size: 1em;
 }
 
-/* line 34, /Users/admin/Dropbox/personal-website/scss/style.scss */
+/* line 31, /Users/admin/Dropbox/personal-website/scss/style.scss */
+.jumbotron a {
+  color: white;
+}
+
+/* line 35, /Users/admin/Dropbox/personal-website/scss/style.scss */
+.jumbotron a:hover {
+  color: #E5E5E5;
+}
+
+/* line 40, /Users/admin/Dropbox/personal-website/scss/style.scss */
 #logo-name {
   font-family: "Courgette", cursive !important;
 }
 
-/* line 38, /Users/admin/Dropbox/personal-website/scss/style.scss */
-#nav-bar {
-  font-family: "Dosis", sans-serif !important;
-  font-size: 1rem;
+/* line 44, /Users/admin/Dropbox/personal-website/scss/style.scss */
+.navbar {
+  height: 4.236em;
+  padding-top: 1rem;
 }
 
-/* line 43, /Users/admin/Dropbox/personal-website/scss/style.scss */
+/* line 49, /Users/admin/Dropbox/personal-website/scss/style.scss */
+#nav-bar {
+  font-family: "Dosis", sans-serif !important;
+  font-size: 1em;
+}
+
+/* line 54, /Users/admin/Dropbox/personal-website/scss/style.scss */
 h1,
 h2 {
   font-family: "Courgette", cursive;
 }
 
-/* line 48, /Users/admin/Dropbox/personal-website/scss/style.scss */
+/* line 59, /Users/admin/Dropbox/personal-website/scss/style.scss */
 h2 {
   font-size: 2.618em;
   margin-bottom: 1.618em;
 }
 
-/* line 53, /Users/admin/Dropbox/personal-website/scss/style.scss */
+/* line 64, /Users/admin/Dropbox/personal-website/scss/style.scss */
 section {
   padding: 4.236em;
 }
 
-/* line 55, /Users/admin/Dropbox/personal-website/scss/style.scss */
+/* line 66, /Users/admin/Dropbox/personal-website/scss/style.scss */
 section img {
-  margin: 1.618em;
+  margin: 1em;
 }
 
-/* line 60, /Users/admin/Dropbox/personal-website/scss/style.scss */
+/* line 71, /Users/admin/Dropbox/personal-website/scss/style.scss */
 #about-section {
   color: white;
   background-color: #081824;
 }
 
-/* line 63, /Users/admin/Dropbox/personal-website/scss/style.scss */
+/* line 74, /Users/admin/Dropbox/personal-website/scss/style.scss */
 #about-section p {
   font-family: "Dosis", sans-serif;
   font-size: 1.618em;
@@ -73,15 +88,27 @@ section img {
   margin-bottom: 1rem;
 }
 
-/* line 71, /Users/admin/Dropbox/personal-website/scss/style.scss */
+/* line 82, /Users/admin/Dropbox/personal-website/scss/style.scss */
 #work-section {
   background-color: #F1EBD3;
 }
 
-/* line 75, /Users/admin/Dropbox/personal-website/scss/style.scss */
+/* line 86, /Users/admin/Dropbox/personal-website/scss/style.scss */
 #photography-section {
   background-color: #081824;
   color: white;
+}
+
+@media (max-width: 767px) {
+  /* line 92, /Users/admin/Dropbox/personal-website/scss/style.scss */
+  .jumbotron {
+    background-image: url("../img/Skyline-portrait.jpg");
+  }
+  /* line 97, /Users/admin/Dropbox/personal-website/scss/style.scss */
+  #about-section p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
 }
 
 /*# sourceMappingURL=../css/style.map */

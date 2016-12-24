@@ -21,57 +21,83 @@
     <script src="dist/jquery.zmd.hierarchical-display.min.js"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-dark">
+<body data-spy="scroll" data-target="#navbar-top">
+    <nav class="navbar navbar-fixed-top navbar-dark" id="navbar-top">
         <a class="navbar-brand" href="#">
             <p id="logo-name">Ellie Nguyen</p>
         </a>
-        <ul class="nav navbar-nav" id="nav-bar">
-            <li class="nav-item active">
-                <a class="nav-link">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about-section">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#work-section">Work</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#photography-section">Photography</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://drive.google.com/file/d/0Byc_wakxENOtRFJwZ002MXRVc0E/view?usp=sharing" target='_blank'>Resume</a>
-            </li>
-        </ul>
-        <ul class="nav navbar-nav float-xs-right" id="icon-bar">
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/thuydung.nguyendo" target='_blank'>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/ellienguyen" target='_blank'>
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/dzungnguyendo" target='_blank'>
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.flickr.com/gp/135261299@N05/G4s185" target='_blank'>
-                    <i class="fa fa-flickr" aria-hidden="true"></i>
-                </a>
-            </li>
-        </ul>
+        <div>
+            <ul class="nav navbar-nav float-xs-right float-md-left" id="nav-bar">
+                <li class="nav-item">
+                    <a class="nav-link" href="#header">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work-section">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#photography-section">Photography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/file/d/0Byc_wakxENOtRFJwZ002MXRVc0E/view?usp=sharing" target='_blank'>Resume</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav float-md-right hidden-md-down" id="icon-bar">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/thuydung.nguyendo" target='_blank'>
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/ellienguyen" target='_blank'>
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/dzungnguyendo" target='_blank'>
+                        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.flickr.com/gp/135261299@N05/G4s185" target='_blank'>
+                        <i class="fa fa-flickr fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron" s=data-animation="hierarchical-display" data-animation-in="bounceIn" data-speed="3">
+    <div class="jumbotron" id="header">
         <div class="container">
             <div class="col-md-6 offset-md-6 col-xs-12">
                 <h1 class="float-xs-right">Ellie Nguyen</h1>
-                <p class="float-xs-right">Front-end Dev | UX Designer | Photographer</p>
+                <p class="float-xs-right">Front-end Dev&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;UX Designer&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Photographer</p>
+            </div>
+            <div class="col-md-6 offset-md-6 col-xs-12">
+                <ul class="list-inline float-xs-right hidden-md-up" id="icon-bar">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/thuydung.nguyendo" target='_blank'>
+                            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/ellienguyen" target='_blank'>
+                            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/dzungnguyendo" target='_blank'>
+                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.flickr.com/gp/135261299@N05/G4s185" target='_blank'>
+                            <i class="fa fa-flickr fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -153,6 +179,20 @@
     ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script type="text/javascript">
+    $('body').scrollspy({
+        target: '#navbar-top'
+    })
+    $(document).ready(function() {
+        $(window).scroll(function() { // check if scroll event happened
+            if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+                $(".navbar-fixed-top").css("background-color", "#081824");
+            } else {
+                $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+            }
+        });
+    });
+    </script>
 </body>
 
 </html>
